@@ -1,6 +1,19 @@
 from textwrap import dedent
 from sys import exit
 
+def c_f(n):  print(f'\nTemperatura em Fahrenheit: {9/5 * n + 32:.2f}°F')
+def c_k(n):  print(f'\nTemperatura em Kelvin: {n + 273.15:.2f}K')
+def f_c(n):  print(f'\nTemperatura em Celsius: {(n - 32)*(5/9) :.2f}°C')
+def f_k(n):  print(f'\nTemperatura em Kelvin: {(n - 32)*(5/9) + 273.15:.2f}°K')
+def k_c(n):  print(f'\nTemperatura em Celsius: {n - 273.15:.2f}°C')
+def k_f(n):  print(f'\nTemperatura em Fahrenheit: {(n - 273.15)*(9/5) + 32:.2f}°F')
+
+CONVERSOES = {
+    (1,2):c_f, (1,3):c_k,
+    (2,1):f_c, (2,3):f_k,
+    (3,1):k_c, (3,2):k_f
+}
+
 def menu_inicial():
     print(f'\n{20*'='} CONVERSOR {20*'='}')
     conversor = f'''\
@@ -23,87 +36,39 @@ def menu_final():
     =>'''
     return int(input(dedent(conversor)))
 
-def celsius_fahrenheit():
-    celsius = float(input('Temperatura Inicial: '))
-    fahrenheit = 9/5 * celsius + 32
-    print(f'\n{20*'='} CONVERSOR {20*'='}')
-    print(f'Temperatura em Fahrenheit: {fahrenheit:.2f}°F')
-
-def celsius_kelvin():
-    celsius = float(input('Temperatura Inicial: '))
-    kelvin = celsius + 273.15
-    print(f'\n{20*'='} CONVERSOR {20*'='}')
-    print(f'Temperatura em Kelvin: {kelvin:.2f}K')
-
-def fahrenheit_celsius():
-    fahrenheit = float(input('Temperatura Inicial: '))
-    celsius = (fahrenheit - 32)*(5/9) 
-    print(f'\n{20*'='} CONVERSOR {20*'='}')
-    print(f'Temperatura em Celsius: {celsius:.2f}°C')
-
-def fahrenheit_kelvin():
-    fahrenheit = float(input('Temperatura Inicial: '))
-    kelvin = (fahrenheit - 32)*(5/9) + 273.15
-    print(f'\n{20*'='} CONVERSOR {20*'='}')
-    print(f'Temperatura em Kelvin: {kelvin:.2f}°K')
-
-def kelvin_celsius():
-    kelvin = float(input('Temperatura Inicial: '))
-    celsius = kelvin - 273.15
-    print(f'\n{20*'='} CONVERSOR {20*'='}')
-    print(f'Temperatura em Celsius: {celsius:.2f}°C')
-
-def kelvin_fahrenheit():
-    kelvin = float(input('Temperatura Inicial: '))
-    fahrenheit = (kelvin - 273.15)*(9/5) + 32
-    print(f'\n{20*'='} CONVERSOR {20*'='}')
-    print(f'Temperatura em Fahrenheit: {fahrenheit:.2f}°F')
-
 while True:
-    opções_validas = set([0,1,2,3])
-    opção_inicial = menu_inicial()
-    
-    if opção_inicial in opções_validas:
+    try:
+        opções_validas = {0,1,2,3}
+        opção_inicial = menu_inicial()
+        
         if opção_inicial == 0:
-            print('Saindo do conversor ...')
-            exit()
-        else:
+                print('Saindo do conversor ...')
+                exit()
+        
+        if opção_inicial in opções_validas:
             while True:
                 opção_final = menu_final()
-            
-                if opção_inicial == opção_final:
-                    print('====== Selecione temperaturas diferentes! ======')
                 
-                elif opção_final == 0:
+                if opção_final == 0:
                     print('Saindo do conversor ...')
                     exit()
+
+                if opção_inicial == opção_final:
+                    print('====== Selecione escalas diferentes! ======')
                 
-                elif opção_inicial == 1 and opção_final == 2:
-                    celsius_fahrenheit()
-                    break
-            
-                elif opção_inicial == 1 and opção_final == 3:
-                    celsius_kelvin()
-                    break
-            
-                elif opção_inicial == 2 and opção_final == 1:
-                    fahrenheit_celsius()
-                    break
-            
-                elif opção_inicial == 2 and opção_final == 3:
-                    fahrenheit_kelvin()
-                    break
-            
-                elif opção_inicial == 3 and opção_final == 1:
-                    kelvin_celsius()
-                    break
-            
-                elif opção_inicial == 3 and opção_final == 2:
-                    kelvin_fahrenheit()
-                    break
-                
+                if opção_final in opções_validas:
+                    if (opção_inicial, opção_final) in CONVERSOES:
+                        temp_ini = float(input('Temperatura Inicial: '))
+                        função = CONVERSOES[(opção_inicial, opção_final)]
+                        temp_fin = função(temp_ini)
+                        break
                 else:
-                    print('\n====== Opção inválida ======')
-    else:
-        print('\n====== Opção Inválida! ======')
+                    print('\n====== Digite somente números disponíveis! ======')
+        else:
+            print('\n====== Digite somente números disponíveis! ======')
+    except ValueError:
+        print('\n====== Digite somente números! ======')
+
+
+
 
