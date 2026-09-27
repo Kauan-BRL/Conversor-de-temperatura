@@ -1,3 +1,3 @@
-# Conversor-de-temperatura
+# Conversor de temperatura
 
-# converte temperaturas informadas em celsius, fahrenheit e kelvin
+Converte temperaturas informadas em celsius(°C), fahrenheit(°F) e kelvin(K)
