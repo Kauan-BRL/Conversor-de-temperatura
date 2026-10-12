@@ -14,7 +14,8 @@ Após executar o arquivo, você terá acesso ao menu principal, conforme apresen
 
 No menu, você digitará um dos números: 1,2,3 ou 0. Cada número indicará qual o tipo de temperatura que você deseja converter para. Em seguida o menu muda perguntando qual o tipo de temperatura que você deseja saber. Assim, basta informar o valor da temperatura que você quer converter, e por fim o código lhe mostrará a o valor no tipo de temperatura que você escolheu saber anteriormente.
 
-Lembre-se de selecionar tipos de temperatura diferentes, caso contrário lhe será mostrado: '====== Selecione escalas diferentes! ======'.
+Lembre-se de selecionar tipos de temperatura diferentes, caso contrário lhe será mostrado:
+'====== Selecione escalas diferentes! ======'.
 
 Caso você selecione '0' em qualquer menu, o programa finalizará o sistema.
 
