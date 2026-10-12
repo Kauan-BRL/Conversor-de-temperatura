@@ -17,11 +17,17 @@ https://github.com/Kauan-BRL/Conversor-de-temperatura
 
 ## Licença 
 
-Este projeto está sob a licença MIT - Veja a [LICENÇA](https://github.com/Kauan-BRL/Conversor-de-temperatura/blob/main/LICENSE) para mais informações.
+Este projeto está sob a licença MIT - Veja a [LICENSE](https://github.com/Kauan-BRL/Conversor-de-temperatura/blob/main/LICENSE) para mais informações.
 
-## arquivos necessários
+## Arquivos necessários
 
-[temp.py](https://github.com/user-attachments/files/33317231/temp.py)
+[temp.py](https://github.com/user-attachments/files/33317231/temp.py) - Arquivo principal que contém o conversor
+
+## Pré-requesitos
+Certifique-se de que a sua versão do python é igual ou superior a versão 3.12.
+
+Caso você não possua o python instalado na máquina, instale-o através desse link: 
+https://www.python.org/downloads/release/python-3150/
 
 ## Uso
 
@@ -42,4 +48,4 @@ Caso selecione 1 (Celsius), em seguida 3 (Kelvin), e informar um valor como: 25,
 
 ## Demonstração
 
-<img width="488" height="425" alt="2026-10-11_22h23_06" src="https://github.com/user-attachments/assets/c26be5c8-b565-4791-8da4-1a622505ef59" />
+![Demonstração do Conversor](<img width="488" height="425" alt="2026-10-11_22h23_06" src="https://github.com/user-attachments/assets/800bb40f-ce5c-48b5-9987-007a7bf93215" />)
