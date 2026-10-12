@@ -21,7 +21,9 @@ Este projeto está sob a licença MIT - Veja a [LICENSE](https://github.com/Kaua
 
 ## Arquivos necessários
 
-[temp.py](https://github.com/user-attachments/files/33317231/temp.py) - Arquivo principal que contém o conversor
+- [temp.py](https://github.com/user-attachments/files/33317231/temp.py) - Arquivo principal que contém o conversor
+- [demonstração.md](https://github.com/Kauan-BRL/Conversor-de-temperatura/blob/main/demonstra%C3%A7%C3%A3o.md) - Arquivo que contém a demonstração de funcionamento do conversor
+- [LICENSE](https://github.com/Kauan-BRL/Conversor-de-temperatura/blob/main/LICENSE) - Arquivo que contém a licença MIT
 
 ## Pré-requesitos
 Certifique-se de que a sua versão do python é igual ou superior a versão 3.12.
@@ -31,16 +33,16 @@ https://www.python.org/downloads/release/python-3150/
 
 ## Uso
 
-Após executar o arquivo, você terá acesso ao menu principal, conforme apresenta-se a imagem anexada.
+Após executar o arquivo, siga as instruções do menu:
 
-No menu, você digitará um dos números: 1,2,3 ou 0. Cada número indicará qual o tipo de temperatura que você deseja converter para. Em seguida o menu muda perguntando qual o tipo de temperatura que você deseja saber. Assim, basta informar o valor da temperatura que você quer converter, e por fim o código lhe mostrará a o valor no tipo de temperatura que você escolheu saber anteriormente.
+- Funcionamento: Digite 1, 2, 3 ou 0 para selecionar as escalas de temperatura e informe o valor desejado.
 
-Lembre-se de selecionar tipos de temperatura diferentes, caso contrário lhe será mostrado:
-'====== Selecione escalas diferentes! ======'.
+- Escalas distintas: As escalas de origem e destino devem ser diferentes; caso contrário, aparecerá o aviso
+   '====== Selecione escalas diferentes! ======'.
 
-Caso você selecione '0' em qualquer menu, o programa finalizará o sistema.
+- Encerramento: Digitar 0 em qualquer menu finaliza o programa.
 
-Caso você digite valores diferente de números, o sistema não prosseguirá, lhe perguntando novamente a informação desejada.
+- Validação: Entradas não numéricas são rejeitadas, solicitando a informação novamente.
 
 ## Exemplo
 
@@ -48,4 +50,4 @@ Caso selecione 1 (Celsius), em seguida 3 (Kelvin), e informar um valor como: 25,
 
 ## Demonstração
 
-![Demonstração do Conversor](<img width="488" height="425" alt="2026-10-11_22h23_06" src="https://github.com/user-attachments/assets/800bb40f-ce5c-48b5-9987-007a7bf93215" />)
+https://github.com/Kauan-BRL/Conversor-de-temperatura/blob/main/demonstra%C3%A7%C3%A3o.md
