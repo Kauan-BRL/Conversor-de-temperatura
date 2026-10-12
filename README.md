@@ -1,12 +1,27 @@
 # Conversor de temperatura 🌡️
+![Linguagem mais utilizada](https://img.shields.io/github/languages/top/:Kauan-BRL/:Converson-de-temperatura)
 
-## Sobre
+> Este projeto lhe permite converter a temperatura de uma escala para outra de seu desejo de forma intuitiva. Os tipos de temperatura possíveis são: Kelvin (K), Fahreinheit (F°) ou Celsius (C°).
 
-Este projeto lhe permite converter a temperatura de uma escala para outra de seu desejo de forma intuitiva. Os tipos de temperatura possíveis são: Kelvin (K), Fahreinheit (F°) ou Celsius (C°).
+## Funcionalidades 
 
+- Conversão de temperaturas
+- Tipos de temperaturas: Kelvin, Fahreinheit, Celsius
+  
 ## Execução
 
-Para executá-lo, é necessário apenas acesso a um terminal de comando, ou seja, na sua máquina, basta baixar o arquivo "temp.py" e em seguida abri-lo, encaminhando para seu terminal de comando.
+1. Clonar o repositório
+2. Execute o arquivo "temp.py" no terminal ou em um editor de código
+
+https://github.com/Kauan-BRL/Conversor-de-temperatura
+
+## Licença 
+
+Este projeto está sob a licença MIT - Veja a [LICENÇA](https://github.com/Kauan-BRL/Conversor-de-temperatura/blob/main/LICENSE) para mais informações.
+
+## arquivos necessários
+
+[temp.py](https://github.com/user-attachments/files/33317231/temp.py)
 
 ## Uso
 
@@ -24,10 +39,6 @@ Caso você digite valores diferente de números, o sistema não prosseguirá, lh
 ## Exemplo
 
 Caso selecione 1 (Celsius), em seguida 3 (Kelvin), e informar um valor como: 25, lhe será apresentado: 'Temperatura em Kelvin: 298.15K'.
-
-## arquivos necessários
-
-[temp.py](https://github.com/user-attachments/files/33317231/temp.py)
 
 ## Demonstração
 
