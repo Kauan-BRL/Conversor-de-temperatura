@@ -1,5 +1,5 @@
 # Conversor de temperatura 🌡️
-![Linguagem mais utilizada](https://img.shields.io/github/languages/top/:Kauan-BRL/:Converson-de-temperatura)
+![Linguagem utilizada](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 > Este projeto lhe permite converter a temperatura de uma escala para outra de seu desejo de forma intuitiva. Os tipos de temperatura possíveis são: Kelvin (K), Fahreinheit (F°) ou Celsius (C°).
 
